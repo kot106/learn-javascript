@@ -18,11 +18,35 @@
             console.log("เกิน100แล้ว")
         }else{
             console.log(count);
-        }
+        }        
+    }
+    function showmyname(){
+      const name = prompt("กรุณาลงชื่อ");
+      const mynametag=document.getElementById('myname');
+      mynametag.innerText=name
+      const age = prompt("กรุณากรอกอายุ");
+      const agetag=document.getElementById('agetag1');
+      agetag.innerText=age
+     
+      if(age>20){
+        alert("มากกว่า20")
+      }
+
+
+      
+
     }
   </script>
   <body>
     <h1>This is HTML</h1>
+    <h3>
+      My name is<span id='myname'>...</span>
+    
+    </h3>
+    <h4>
+      age is<span id='agetag1'>...</span>
+    </h4>
+    <button type="button" onclick=showmyname()>Click Me!</button>
     <button type="button" onclick=functiokot()>Click Me!</button>
   </body>
   <body>
